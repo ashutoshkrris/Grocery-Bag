@@ -7,14 +7,17 @@
 {% block content %}
 <body class="text-center">
   <main class="form-signin">
-    <form>
+    <form method="POST" action="{% url 'signup' %}">
+      {% csrf_token %}
+      
       <h1 class="h3 mb-3 fw-normal">Please sign up</h1>
-
+      {% include 'partials/alerts.html' %}
       <div class="form-floating mt-2">
         <input
           type="text"
           class="form-control"
           id="floatingInput"
+          name="username"
           placeholder="johndoe"
         />
         <label for="floatingInput">Username</label>
@@ -24,6 +27,7 @@
           type="password"
           class="form-control"
           id="floatingPassword"
+          name="password"
           placeholder="Password"
         />
         <label for="floatingPassword">Password</label>
@@ -33,7 +37,7 @@
         Sign up
       </button>
       <p class="mt-3">
-        Already Registered? <a href="signin.html">Sign in now</a>
+        Already Registered? <a href="{% url 'signin' %}">Sign in now</a>
       </p>
     </form>
   </main>
