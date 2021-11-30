@@ -8,7 +8,11 @@ from .models import Item
 
 @login_required
 def index(request):
-    items = Item.objects.filter(user=request.user).order_by('-id')
+    date = request.GET.get('date')
+    if date:
+        items = Item.objects.filter(user=request.user, date=date).order_by('-id')
+    else:
+        items = Item.objects.filter(user=request.user).order_by('-id')
     context = {
         'items': items
     }

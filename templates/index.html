@@ -14,18 +14,20 @@
         </a>
       </div>
       <div class="col-lg-6 float-right">
-        <div class="row">
-          <div class="col-lg-6">
-            <!-- Date Filtering-->
-            <input type="date" class="form-control" />
+        <form action="{% url 'index' %}" method="get">
+          <div class="row">
+            <div class="col-lg-6">
+              <!-- Date Filtering-->
+              <input type="date" name="date" class="form-control" />
+            </div>
+            <div class="col-lg-4">
+              <input type="submit" class="btn btn-danger" value="filter" />
+            </div>
+            <div class="col-lg-2">
+              <p class="mt-1"><a href="{% url 'signout' %}">Log Out</a></p>
+            </div>
           </div>
-          <div class="col-lg-4">
-            <input type="submit" class="btn btn-danger" value="filter" />
-          </div>
-          <div class="col-lg-2">
-            <p class="mt-1"><a href="{% url 'signout' %}">Log Out</a></p>
-          </div>
-        </div>
+        </form>
       </div>
     </div>
     <br>
