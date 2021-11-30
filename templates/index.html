@@ -1,4 +1,6 @@
-{% extends "base.html" %}{% load static %} {% block title %}View Bag{% endblock title %} 
+{% extends "base.html" %}{% load static %} 
+
+{% block title %}View Bag{% endblock title %} 
 
 {% block content %}
 <body>
@@ -7,6 +9,9 @@
     <div class="row">
       <div class="col-lg-6">
         <h1>View Grocery List</h1>
+        <a href="{% url 'add-item' %}">
+          <button type="button" class="btn btn-success">Add Item</button>
+        </a>
       </div>
       <div class="col-lg-6 float-right">
         <div class="row">
@@ -23,40 +28,40 @@
         </div>
       </div>
     </div>
-    <!-- // top -->
+    <br>
+    {% include 'partials/alerts.html' %}
     <!-- Grocery Cards -->
     <div class="row mt-4">
-      <!--- -->
       <!-- Loop This -->
-      <div class="col-lg-4">
+      {% for item in items %}
+      <div class="col-lg-4 mb-3">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">Tomato</h5>
-            <h6 class="card-subtitle mb-2 text-muted">2 Pcs.</h6>
-            <p class="text-success">BOUGHT</p>
+            <h5 class="card-title">{{item.name}}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{item.quantity}}</h6>
+            {% if item.status == 'PENDING' %}
+            <p class="text-info">{{item.status}}</p>
+            {% elif item.status == 'BOUGHT' %}
+            <p class="text-success">{{item.status}}</p>
+            {% else %}
+            <p class="text-danger">{{item.status}}</p>
+            {% endif %}
+            <div class="row">
+              <div class="col-md-6">
+                <a href="{% url 'update-item' item.id %}">
+                  <button type="button" class="btn btn-primary">UPDATE</button>
+                </a>
+              </div>
+              <div class="col-md-6">
+                <a href="{% url 'delete-item' item.id %}">
+                  <button type="button" class="btn btn-danger">DELETE</button>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <!-- // Loop -->
-      <div class="col-lg-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Chicken</h5>
-            <h6 class="card-subtitle mb-2 text-muted">2Kgs</h6>
-            <p class="text-danger">NOT AVAILABLE</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Posto</h5>
-            <h6 class="card-subtitle mb-2 text-muted">50gms</h6>
-            <p class="text-info">PENDING</p>
-          </div>
-        </div>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </body>
