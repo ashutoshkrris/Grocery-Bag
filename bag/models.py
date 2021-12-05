@@ -16,7 +16,7 @@ class Item(models.Model):
     quantity = models.CharField(max_length=63)
     status = models.CharField(
         max_length=15, choices=STATUS_CHOICES, default='PENDING')
-    user = models.ForeignKey(User, on_delete=models.PROTECT)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
     date = models.DateField()
     updated_at = models.DateTimeField(auto_now=True)
     created_at = models.DateTimeField(auto_now_add=True)
