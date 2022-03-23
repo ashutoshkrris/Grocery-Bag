@@ -1,19 +1,19 @@
 # Grocery Bag using Django
 
-![Banner Image](https://res.cloudinary.com/dlomjljb6/image/upload/v1/media/blog/series/Yellow_Birthday_Party_Blog_Banner_amkntr)
+![Banner Image](https://res.cloudinary.com/dlomjljb6/image/upload/v1/media/blog/series/WQPxJNcXf_vb4athr)
 
 Grocery Bag is a way to store grocery items for marketing. It will contain a homepage that will be showing all the list of items to buy and have been bought. Users will be able to add items and update items, and can even delete them.
 
 # Tutorial Links
 
-* Blog Series: https://ireadblog.com/series/11/grocery-bag-application-using-django
+* Blog Series: https://ireadblog.com/series/19/grocery-bag-application-using-django
 
-* Part 1: https://ireadblog.com/posts/68/grocery-bag-using-django-part-1-introduction-and-project-setup
-* Part 2: https://ireadblog.com/posts/70/grocery-bag-using-django-part-2-fixing-templates-and-static-files
-* Part 3: https://ireadblog.com/posts/71/grocery-bag-using-django-part-3-user-authentication
-* Part 4: https://ireadblog.com/posts/72/grocery-bag-using-django-part-4-crud-operations
-* Part 5: https://ireadblog.com/posts/73/grocery-bag-using-django-part-5-filter-items-by-date
-* Part 6: https://ireadblog.com/posts/74/grocery-bag-using-django-part-6-deployment-on-heroku
+* Part 1: https://ireadblog.com/posts/147/how-to-create-a-grocery-bag-app-using-django-part-i
+* Part 2: https://ireadblog.com/posts/148/fix-templates-and-static-files-of-the-grocery-bag-app-part-ii
+* Part 3: https://ireadblog.com/posts/149/user-authentication-for-grocery-bag-using-django-part-iii
+* Part 4: https://ireadblog.com/posts/150/crud-operations-on-grocery-bag-part-iv
+* Part 5: https://ireadblog.com/posts/151/filter-grocery-bag-items-by-date-part-v
+* Part 6: https://ireadblog.com/posts/152/deployment-of-grocery-bag-app-on-heroku
 
 # YouTube Demo Video
 
