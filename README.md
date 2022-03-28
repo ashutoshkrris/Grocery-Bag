@@ -1,6 +1,6 @@
 # Grocery Bag using Django
 
-![Banner Image](https://res.cloudinary.com/dlomjljb6/image/upload/v1/media/blog/series/WQPxJNcXf_vb4athr)
+![Banner Image](https://res.cloudinary.com/dlomjljb6/image/upload/v1/media/blog/series/WQPxJNcXf_vb4ath)
 
 Grocery Bag is a way to store grocery items for marketing. It will contain a homepage that will be showing all the list of items to buy and have been bought. Users will be able to add items and update items, and can even delete them.
 
