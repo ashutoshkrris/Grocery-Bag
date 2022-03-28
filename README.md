@@ -13,7 +13,7 @@ Grocery Bag is a way to store grocery items for marketing. It will contain a hom
 * Part 3: https://ireadblog.com/posts/149/user-authentication-for-grocery-bag-using-django-part-iii
 * Part 4: https://ireadblog.com/posts/150/crud-operations-on-grocery-bag-part-iv
 * Part 5: https://ireadblog.com/posts/151/filter-grocery-bag-items-by-date-part-v
-* Part 6: https://ireadblog.com/posts/152/deployment-of-grocery-bag-app-on-heroku
+* Part 6: https://ireadblog.com/posts/152/deployment-of-grocery-bag-app-on-heroku-part-vi
 
 # YouTube Demo Video
 
