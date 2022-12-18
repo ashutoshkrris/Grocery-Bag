@@ -6,14 +6,12 @@ Grocery Bag is a way to store grocery items for marketing. It will contain a hom
 
 # Tutorial Links
 
-* Blog Series: https://ireadblog.com/series/19/grocery-bag-application-using-django
-
-* Part 1: https://ireadblog.com/posts/147/how-to-create-a-grocery-bag-app-using-django-part-i
-* Part 2: https://ireadblog.com/posts/148/fix-templates-and-static-files-of-the-grocery-bag-app-part-ii
-* Part 3: https://ireadblog.com/posts/149/user-authentication-for-grocery-bag-using-django-part-iii
-* Part 4: https://ireadblog.com/posts/150/crud-operations-on-grocery-bag-part-iv
-* Part 5: https://ireadblog.com/posts/151/filter-grocery-bag-items-by-date-part-v
-* Part 6: https://ireadblog.com/posts/152/deployment-of-grocery-bag-app-on-heroku-part-vi
+* Part 1: https://ashutoshkrris.hashnode.dev/how-to-create-a-grocery-bag-app-using-django-part-i
+* Part 2: https://ashutoshkrris.hashnode.dev/fix-templates-and-static-files-of-the-grocery-bag-app-part-ii
+* Part 3: https://ashutoshkrris.hashnode.dev/user-authentication-for-grocery-bag-using-django-part-iii
+* Part 4: https://ashutoshkrris.hashnode.dev/crud-operations-on-grocery-bag-part-iv
+* Part 5: https://ashutoshkrris.hashnode.dev/filter-grocery-bag-items-by-date-part-v
+* Part 6: https://ashutoshkrris.hashnode.dev/deployment-of-grocery-bag-app-on-heroku-part-vi
 
 # YouTube Demo Video
 
